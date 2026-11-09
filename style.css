@@ -4,44 +4,45 @@
    One external stylesheet shared by every page.
    ========================================================= */
 
-/* ---- Reset-ish basics ---- */
-* {
-  box-sizing: border-box;
+:root {
+  --bg: #f3f5f9;
+  --surface: #ffffff;
+  --surface-border: #e2e6ee;
+  --ink: #1b2435;
+  --ink-soft: #52607a;
+  --navy: #11182b;
+  --accent: #2f5fd6;
+  --accent-dark: #233f93;
+  --accent-tint: #e8edfb;
+  --radius: 10px;
 }
+
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-  background-color: #0a1930;   /* dark navy background */
-  color: #e6edf7;
-  line-height: 1.6;
+  font-family: 'Inter', 'Segoe UI', Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
 }
 
-a {
-  color: #4da3ff;              /* blue accent for links */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
+a { color: var(--accent-dark); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; height: auto; }
 
 /* ---- Header & Navigation ---- */
 header {
-  background-color: #081222;
-  padding: 20px 5%;
-  border-bottom: 3px solid #2563eb;
+  background-color: var(--navy);
+  padding: 22px 5%;
 }
 
 header h1 {
-  margin: 0 0 10px 0;
+  margin: 0 0 14px 0;
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 nav ul {
@@ -50,186 +51,152 @@ nav ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 nav a {
   display: inline-block;
-  padding: 10px 16px;
-  background-color: #11213d;
-  border: 1px solid #2563eb;
-  border-radius: 6px;
-  color: #cfe0ff;
-  font-weight: bold;
+  padding: 9px 16px;
+  border-radius: 999px;
+  color: #c7d1ea;
+  font-weight: 600;
+  font-size: 0.92rem;
+  border: 1px solid transparent;
 }
 
 nav a:hover {
-  background-color: #2563eb;
+  background-color: rgba(255, 255, 255, 0.08);
   color: #ffffff;
   text-decoration: none;
 }
 
 /* ---- Main content ---- */
 main {
-  padding: 30px 5%;
-  max-width: 1000px;
+  padding: 40px 5% 10px;
+  max-width: 920px;
   margin: 0 auto;
 }
 
 section {
-  background-color: #0f1e38;
-  border: 1px solid #1c2e4f;
-  border-radius: 10px;
-  padding: 24px;
-  margin-bottom: 24px;
+  background-color: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius);
+  padding: 28px 30px;
+  margin-bottom: 22px;
+  box-shadow: 0 1px 2px rgba(17, 24, 43, 0.04);
 }
 
-h1, h2, h3 {
-  color: #ffffff;
-}
+h1, h2, h3 { color: var(--navy); }
 
 h2 {
-  border-left: 5px solid #2563eb;
-  padding-left: 12px;
-  font-size: 1.4rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 14px;
+  font-size: 1.35rem;
+  margin-top: 0;
 }
 
-h3 {
-  color: #8db4f7;
-  font-size: 1.1rem;
-}
+h3 { color: var(--accent-dark); font-size: 1.05rem; }
+p { color: var(--ink-soft); }
+strong { color: var(--ink); }
 
-/* ---- Banner / hero image ---- */
 .banner {
   width: 100%;
-  border-radius: 10px;
+  border-radius: var(--radius);
   margin-bottom: 20px;
-  border: 1px solid #1c2e4f;
+  border: 1px solid var(--surface-border);
 }
 
-/* ---- Lists ---- */
-ul, ol {
-  padding-left: 24px;
-}
+ul, ol { padding-left: 22px; color: var(--ink-soft); }
+li { margin-bottom: 7px; }
 
-li {
-  margin-bottom: 6px;
-}
-
-/* ---- Table (topics.html) ---- */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 th, td {
-  border: 1px solid #1c2e4f;
-  padding: 10px 12px;
+  border: 1px solid var(--surface-border);
+  padding: 12px 14px;
   text-align: left;
   vertical-align: top;
 }
 
-th {
-  background-color: #152a4d;
-  color: #ffffff;
-}
+th { background-color: var(--accent-tint); color: var(--navy); }
+tr:nth-child(even) { background-color: #f8f9fc; }
 
-tr:nth-child(even) {
-  background-color: #0c1a30;
-}
-
-/* ---- Form (contact.html) ---- */
 form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
   max-width: 500px;
 }
 
 label {
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 4px;
   display: block;
+  color: var(--navy);
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #2c4066;
-  background-color: #081222;
-  color: #e6edf7;
+  padding: 11px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--surface-border);
+  background-color: var(--bg);
+  color: var(--ink);
   font-family: inherit;
 }
 
-textarea {
-  resize: vertical;
-  min-height: 120px;
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
 }
+
+textarea { resize: vertical; min-height: 120px; }
 
 button[type="submit"] {
   align-self: flex-start;
-  padding: 10px 24px;
-  background-color: #2563eb;
+  padding: 11px 26px;
+  background-color: var(--accent);
   color: #ffffff;
   border: none;
-  border-radius: 6px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
-  background-color: #1d4ed8;
-}
+button[type="submit"]:hover { background-color: var(--accent-dark); }
 
-/* ---- Footer ---- */
 footer {
   text-align: center;
-  padding: 18px;
-  background-color: #081222;
-  border-top: 3px solid #2563eb;
-  color: #9fb3d6;
-  font-size: 0.9rem;
+  padding: 20px;
+  background-color: var(--navy);
+  color: #9fabc9;
+  font-size: 0.88rem;
+  margin-top: 20px;
 }
 
-/* ---- Goals / skills chips ---- */
-.goal-list li::marker {
-  color: #4da3ff;
-  font-weight: bold;
-}
+.goal-list li::marker { color: var(--accent); font-weight: bold; }
 
-/* ---- Responsive: phone-sized screens ---- */
 @media (max-width: 600px) {
-  header h1 {
-    font-size: 1.4rem;
-  }
+  header h1 { font-size: 1.3rem; }
+  nav ul { flex-direction: column; }
+  nav a { text-align: center; }
+  main { padding: 24px 4% 10px; }
+  section { padding: 22px; }
 
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav a {
-    text-align: center;
-  }
-
-  main {
-    padding: 20px 4%;
-  }
-
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-
-  th {
-    display: none;
-  }
+  table, thead, tbody, th, td, tr { display: block; }
+  th { display: none; }
 
   td {
     border: none;
-    border-bottom: 1px solid #1c2e4f;
+    border-bottom: 1px solid var(--surface-border);
     position: relative;
     padding-left: 45%;
   }
@@ -238,7 +205,7 @@ footer {
     content: attr(data-label);
     position: absolute;
     left: 10px;
-    font-weight: bold;
-    color: #8db4f7;
+    font-weight: 600;
+    color: var(--accent-dark);
   }
 }
