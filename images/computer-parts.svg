@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Diagram of a computer tower with the CPU, RAM, storage drive, motherboard and power supply labeled">
+  <rect width="800" height="420" fill="#0a1930"/>
+
+  <!-- Tower case -->
+  <rect x="300" y="40" width="200" height="340" rx="8" fill="#0f1e38" stroke="#2563eb" stroke-width="3"/>
+
+  <!-- Motherboard -->
+  <rect x="320" y="60" width="160" height="300" fill="#11213d" stroke="#1c2e4f" stroke-width="2"/>
+
+  <!-- CPU -->
+  <rect x="340" y="80" width="50" height="50" fill="#2563eb"/>
+  <!-- RAM sticks -->
+  <rect x="410" y="80" width="14" height="60" fill="#4da3ff"/>
+  <rect x="430" y="80" width="14" height="60" fill="#4da3ff"/>
+  <!-- Storage drive -->
+  <rect x="340" y="160" width="120" height="40" fill="#8db4f7"/>
+  <!-- Power supply -->
+  <rect x="340" y="300" width="120" height="50" fill="#f59e0b"/>
+
+  <!-- Labels with leader lines -->
+  <line x1="365" y1="80" x2="610" y2="60" stroke="#4da3ff" stroke-width="1.5"/>
+  <text x="615" y="65" font-family="Arial" font-size="16" fill="#ffffff">CPU (Processor)</text>
+
+  <line x1="420" y1="90" x2="610" y2="110" stroke="#4da3ff" stroke-width="1.5"/>
+  <text x="615" y="115" font-family="Arial" font-size="16" fill="#ffffff">RAM (Memory)</text>
+
+  <line x1="400" y1="180" x2="610" y2="180" stroke="#4da3ff" stroke-width="1.5"/>
+  <text x="615" y="185" font-family="Arial" font-size="16" fill="#ffffff">Storage (SSD / HDD)</text>
+
+  <line x1="400" y1="325" x2="610" y2="300" stroke="#4da3ff" stroke-width="1.5"/>
+  <text x="615" y="305" font-family="Arial" font-size="16" fill="#ffffff">Power Supply</text>
+
+  <line x1="320" y1="210" x2="150" y2="230" stroke="#4da3ff" stroke-width="1.5"/>
+  <text x="60" y="235" font-family="Arial" font-size="16" fill="#ffffff">Motherboard</text>
+
+  <text x="400" y="400" text-anchor="middle" font-family="Arial" font-size="13" fill="#9fb3d6">Figure 1: Key components inside a desktop computer case</text>
+</svg>
