@@ -820,6 +820,20 @@ td:first-child {
 
 .contact-method a:hover { color: var(--cyan); }
 
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.member-card {
+  padding: 22px 24px;
+}
+
+.member-card .card-index { margin-bottom: 8px; }
+
+.member-card h3 { margin-bottom: 0; }
+
 .aside-stack {
   display: grid;
   gap: 16px;
