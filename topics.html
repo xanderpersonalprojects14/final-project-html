@@ -3,116 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Computing topics review for CC 101 - lessons 1 to 6, timeline, computer parts, and security tips.">
   <title>My Computing Journey - Computing Topics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>My Computing Journey</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="topics.html">Computing Topics</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-name">My Computing Journey</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="topics.html" class="active">Topics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="nav-cta" href="contact.html">Get in touch</a>
+    </div>
   </header>
 
   <main>
 
-    <section>
-      <h2>Review: Lessons 1 to 6</h2>
-      <p>This page sums up what I've learned so far in CC 101.</p>
+    <section class="page-hero">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Computing Topics</span>
+      </nav>
+      <span class="pill"><span class="dot"></span> Computing Topics</span>
+      <h1>Review: <span class="grad">Lessons 1 to 6</span></h1>
+      <p class="lead">This page sums up what I've learned so far in CC 101.</p>
+    </section>
 
-      <!-- Required table element: summary per lesson -->
-      <!--
-        NOTE TO STUDENT: The Lesson 5 and Lesson 6 rows below are placeholders
-        because those slide decks weren't available when this page was built.
-        Replace their two sentences with the actual topics your instructor
-        covered in those lessons before you submit.
-      -->
-      <table>
-        <thead>
-          <tr>
-            <th>Lesson</th>
-            <th>Summary</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td data-label="Lesson">Lesson 1: The Computing Industry & Profession</td>
-            <td data-label="Summary">Introduced the different sectors of the computing industry - hardware, software, IT services, networks, data, and games. Also explained why computing is still a young, fast-changing profession compared to fields like law or medicine.</td>
-          </tr>
-          <tr>
-            <td data-label="Lesson">Lesson 2: Computing in Different Fields</td>
-            <td data-label="Summary">Showed how computing works like a general-purpose tool used across many fields, including biology and healthcare, sociology, the environment, and gaming. Real case studies made it clear computing speeds up research in every one of them.</td>
-          </tr>
-          <tr>
-            <td data-label="Lesson">Lesson 3: History of Computing</td>
-            <td data-label="Summary">Traced how computing devices evolved from the abacus to modern smartphones, and introduced key contributors such as Ada Lovelace, Alan Turing, and Grace Hopper. Reporting groups also discussed how computing changed society and culture.</td>
-          </tr>
-          <tr>
-            <td data-label="Lesson">Lesson 4: Key Components of Computer Systems</td>
-            <td data-label="Summary">Covered the CPU and RAM as the "thinking" parts of a computer, storage devices (HDD, SSD, cloud) and input/output devices, plus how these pieces are organized and managed by an operating system.</td>
-          </tr>
-          <tr>
-            <td data-label="Lesson">Lesson 5: [Edit with actual topic]</td>
-            <td data-label="Summary">[Replace this placeholder with a two-sentence summary of what your class actually covered in Lesson 5.]</td>
-          </tr>
-          <tr>
-            <td data-label="Lesson">Lesson 6: [Edit with actual topic]</td>
-            <td data-label="Summary">[Replace this placeholder with a two-sentence summary of what your class actually covered in Lesson 6.]</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Required table element: summary per lesson -->
+    <!--
+      NOTE TO STUDENT: The Lesson 5 and Lesson 6 rows below are placeholders
+      because those slide decks weren't available when this page was built.
+      Replace their two sentences with the actual topics your instructor
+      covered in those lessons before you submit.
+    -->
+    <section class="section">
+      <div class="section-head">
+        <span class="kicker">Lesson summaries</span>
+        <h2>Lessons 1 to 6 at a glance</h2>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Lesson</th>
+              <th scope="col">Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Lesson">Lesson 1: The Computing Industry &amp; Profession</td>
+              <td data-label="Summary">Introduced the different sectors of the computing industry &mdash; hardware, software, IT services, networks, data, and games. Also explained why computing is still a young, fast-changing profession compared to fields like law or medicine.</td>
+            </tr>
+            <tr>
+              <td data-label="Lesson">Lesson 2: Computing in Different Fields</td>
+              <td data-label="Summary">Showed how computing works like a general-purpose tool used across many fields, including biology and healthcare, sociology, the environment, and gaming. Real case studies made it clear computing speeds up research in every one of them.</td>
+            </tr>
+            <tr>
+              <td data-label="Lesson">Lesson 3: History of Computing</td>
+              <td data-label="Summary">Traced how computing devices evolved from the abacus to modern smartphones, and introduced key contributors such as Ada Lovelace, Alan Turing, and Grace Hopper. Reporting groups also discussed how computing changed society and culture.</td>
+            </tr>
+            <tr>
+              <td data-label="Lesson">Lesson 4: Key Components of Computer Systems</td>
+              <td data-label="Summary">Covered the CPU and RAM as the "thinking" parts of a computer, storage devices (HDD, SSD, cloud) and input/output devices, plus how these pieces are organized and managed by an operating system.</td>
+            </tr>
+            <tr>
+              <td data-label="Lesson">Lesson 5: Security and Safe Computing</td>
+              <td data-label="Summary">Discussed common online threats such as phishing and weak passwords, and simple habits that keep accounts and devices safe. This placeholder will be replaced with the exact coverage from class.</td>
+            </tr>
+            <tr>
+              <td data-label="Lesson">Lesson 6: The Internet and the Web</td>
+              <td data-label="Summary">Explored how the internet connects networks around the world and how the web runs on top of it. This placeholder will also be replaced with the exact coverage from class.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <!-- Timeline list, Lesson 3 -->
-    <section>
-      <h3>Timeline: Evolution of Computing Devices (Lesson 3)</h3>
-      <ol>
-        <li>Abacus - an ancient manual calculation tool, used long before electricity.</li>
-        <li>Mechanical calculators - Pascal's Calculator (1642) and Babbage's Analytical Engine (1837).</li>
-        <li>Vacuum tubes & ENIAC (1945) - one of the first large electronic computers.</li>
-        <li>Transistors & integrated circuits - made computers smaller, faster, and cheaper.</li>
-        <li>Personal computers - the Altair 8800, Apple II, and IBM PC brought computers into homes.</li>
-        <li>Smartphones today - far more computing power than ENIAC, now fits in a pocket.</li>
+    <section class="section">
+      <div class="section-head">
+        <span class="kicker">Lesson 3</span>
+        <h2>Evolution of computing devices</h2>
+      </div>
+
+      <ol class="timeline">
+        <li>
+          <span class="timeline-year">Ancient</span>
+          <div class="timeline-body">
+            <h3>Abacus</h3>
+            <p>An ancient manual calculation tool, used long before electricity.</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline-year">1642 &ndash; 1837</span>
+          <div class="timeline-body">
+            <h3>Mechanical calculators</h3>
+            <p>Pascal's Calculator (1642) and Babbage's Analytical Engine (1837).</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline-year">1945</span>
+          <div class="timeline-body">
+            <h3>Vacuum tubes &amp; ENIAC</h3>
+            <p>One of the first large electronic computers.</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline-year">1950s &ndash; 1970s</span>
+          <div class="timeline-body">
+            <h3>Transistors &amp; integrated circuits</h3>
+            <p>Made computers smaller, faster, and cheaper.</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline-year">1970s &ndash; 1980s</span>
+          <div class="timeline-body">
+            <h3>Personal computers</h3>
+            <p>The Altair 8800, Apple II, and IBM PC brought computers into homes.</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline-year">Today</span>
+          <div class="timeline-body">
+            <h3>Smartphones</h3>
+            <p>Far more computing power than ENIAC, now fits in a pocket.</p>
+          </div>
+        </li>
       </ol>
     </section>
 
     <!-- Labeled computer parts, Lesson 4 -->
-    <section>
-      <h3>Labeled Computer Parts (Lesson 4)</h3>
-      <img src="images/computer-parts.svg" alt="Diagram of a desktop computer case with the CPU, RAM, storage drive, motherboard, and power supply labeled" class="banner">
-      <p>
-        The <strong>CPU</strong> executes instructions and acts as the "brain" of the
-        computer. <strong>RAM</strong> is temporary, volatile memory used for whatever
-        the computer is actively working on. <strong>Storage</strong> (HDD or SSD) holds
-        data permanently, even when the power is off. The <strong>motherboard</strong>
-        connects every component together, and the <strong>power supply</strong>
-        provides the electricity each part needs to run.
-      </p>
+    <section class="section">
+      <div class="section-head">
+        <span class="kicker">Lesson 4</span>
+        <h2>Labeled computer parts</h2>
+      </div>
+
+      <div class="bento-grid">
+        <figure class="glass-card span-7 figure">
+          <img src="images/computer-parts.svg" alt="Diagram of a desktop computer case with the CPU, RAM, storage drive, motherboard, and power supply labeled">
+          <figcaption>Figure 1: Key components inside a desktop computer case.</figcaption>
+        </figure>
+
+        <div class="glass-card span-5">
+          <p>
+            The <strong>CPU</strong> executes instructions and acts as the "brain" of the
+            computer. <strong>RAM</strong> is temporary, volatile memory used for whatever
+            the computer is actively working on.
+          </p>
+          <ul class="check-list">
+            <li><strong>CPU</strong> &mdash; processes instructions</li>
+            <li><strong>RAM</strong> &mdash; short-term working memory</li>
+            <li><strong>Storage</strong> &mdash; keeps data permanently</li>
+            <li><strong>Motherboard</strong> &mdash; connects everything</li>
+            <li><strong>Power supply</strong> &mdash; delivers electricity</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Security tips, Lesson 5 -->
-    <section>
-      <h3>Three Security Tips (Lesson 5)</h3>
-      <ul>
-        <li>Use strong, unique passwords for each account, and turn on two-factor authentication whenever it's available.</li>
-        <li>Think before you click - avoid links or attachments from unknown or suspicious senders (phishing attempts).</li>
-        <li>Keep your operating system, browser, and apps updated so known security holes get patched.</li>
-      </ul>
+    <section class="section">
+      <div class="section-head">
+        <span class="kicker">Lesson 5</span>
+        <h2>Three security tips</h2>
+      </div>
+
+      <div class="bento-grid">
+        <article class="glass-card span-4">
+          <span class="card-index">Tip 1</span>
+          <h3>Strong passwords</h3>
+          <p>Use strong, unique passwords for each account, and turn on two-factor authentication whenever it's available.</p>
+        </article>
+
+        <article class="glass-card span-4">
+          <span class="card-index">Tip 2</span>
+          <h3>Think before you click</h3>
+          <p>Avoid links or attachments from unknown or suspicious senders &mdash; these are often phishing attempts.</p>
+        </article>
+
+        <article class="glass-card span-4">
+          <span class="card-index">Tip 3</span>
+          <h3>Keep things updated</h3>
+          <p>Keep your operating system, browser, and apps updated so known security holes get patched.</p>
+        </article>
+      </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>Group 1 &mdash; Section BSCS - 1G &mdash; CC 101 Final Project</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-name">My Computing Journey</span>
+        </a>
+        <p>A CC 101 final project by Group 1, Section BSCS - 1G. Built with HTML5 and CSS.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="topics.html">Computing Topics</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Group 1 &middot; BSCS - 1G</span>
+      <span>CC 101 Final Project</span>
+    </div>
   </footer>
 
 </body>

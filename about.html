@@ -3,32 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Group 1 - career path, skills, and goals in information technology.">
   <title>My Computing Journey - About Me</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>My Computing Journey</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="topics.html">Computing Topics</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-name">My Computing Journey</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="topics.html">Topics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="nav-cta" href="contact.html">Get in touch</a>
+    </div>
   </header>
 
   <main>
 
     <!-- Short personal introduction -->
-    <section>
-      <h2>Hello, I'm Group 1</h2>
-      <p>
+    <section class="page-hero">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>About Me</span>
+      </nav>
+      <span class="pill"><span class="dot"></span> About Me</span>
+      <h1>Hello, I'm <span class="grad">Group 1</span>.</h1>
+      <p class="lead">
         I'm a student taking CC 101: Introduction to Computing, section BSCS - 1G.
         This page is part of my final project, where I share a bit about who I am,
         where I'm headed in the IT world, and what I'm working on improving.
@@ -36,42 +47,120 @@
     </section>
 
     <!-- Career path, connects to Lesson 1 (computing industry/profession) -->
-    <section>
-      <h2>My Career Path: Software Developer</h2>
-      <p>
-        Out of all the paths in the computing industry, I'm most interested in becoming a
-        <strong>Software Developer</strong>. I like the idea of turning an idea or a
-        problem into something people can actually use - an app, a website, or a tool
-        that makes someone's day a little easier. Lesson 1 showed me that computing
-        careers aren't one-size-fits-all; development is just one path among many,
-        alongside networking, security, and data.
-      </p>
+    <section class="section">
+      <div class="bento-grid">
+        <article class="glass-card span-8">
+          <span class="kicker">Career path</span>
+          <h2>Software Developer</h2>
+          <p>
+            Out of all the paths in the computing industry, I'm most interested in becoming a
+            <strong>Software Developer</strong>. I like the idea of turning an idea or a
+            problem into something people can actually use &mdash; an app, a website, or a tool
+            that makes someone's day a little easier.
+          </p>
+          <p>
+            Lesson 1 showed me that computing careers aren't one-size-fits-all; development
+            is just one path among many, alongside networking, security, and data.
+          </p>
+        </article>
+
+        <aside class="glass-card span-4 accent-card">
+          <span class="kicker">Why development?</span>
+          <ul class="check-list">
+            <li>Build things people can actually use</li>
+            <li>Solve real problems with code</li>
+            <li>Keep learning as technology changes</li>
+          </ul>
+        </aside>
+      </div>
     </section>
 
-    <!-- Skills to learn -->
-    <section>
-      <h3>Skills I Want to Learn</h3>
-      <ul>
-        <li>JavaScript and modern front-end frameworks</li>
-        <li>Databases and backend programming (e.g. with Python or Java)</li>
-        <li>Version control with Git and GitHub</li>
-      </ul>
+    <!-- Skills to learn, shown with progress bars -->
+    <section class="section">
+      <div class="section-head">
+        <span class="kicker">Next steps</span>
+        <h2>Skills I want to learn</h2>
+        <p>The three areas I'm focusing on to grow as a developer.</p>
+      </div>
+
+      <div class="bento-grid">
+        <article class="glass-card span-4">
+          <span class="card-index">Front-end</span>
+          <h3>Modern web</h3>
+          <p>JavaScript and modern front-end frameworks to build interactive pages.</p>
+          <div class="bar"><span style="width: 55%"></span></div>
+        </article>
+
+        <article class="glass-card span-4">
+          <span class="card-index">Back-end</span>
+          <h3>Data &amp; logic</h3>
+          <p>Databases and backend programming using languages such as Python or Java.</p>
+          <div class="bar"><span style="width: 40%"></span></div>
+        </article>
+
+        <article class="glass-card span-4">
+          <span class="card-index">Tools</span>
+          <h3>Version control</h3>
+          <p>Using Git and GitHub to track changes and collaborate with other developers.</p>
+          <div class="bar"><span style="width: 65%"></span></div>
+        </article>
+      </div>
     </section>
 
-    <!-- Three goals, shown as a list -->
-    <section>
-      <h3>My Three Goals</h3>
+    <!-- Three goals, shown as numbered steps -->
+    <section class="section">
+      <div class="section-head">
+        <span class="kicker">Roadmap</span>
+        <h2>My three goals</h2>
+      </div>
+
       <ol class="goal-list">
-        <li>Finish CC 101 with a strong grasp of HTML, CSS, and the fundamentals of computing.</li>
-        <li>Build at least one personal coding project outside of class requirements.</li>
-        <li>Land an internship or on-the-job training related to software development.</li>
+        <li>
+          <span class="goal-num">01</span>
+          <div>
+            <h3>Finish strong</h3>
+            <p>Finish CC 101 with a strong grasp of HTML, CSS, and the fundamentals of computing.</p>
+          </div>
+        </li>
+        <li>
+          <span class="goal-num">02</span>
+          <div>
+            <h3>Build something of my own</h3>
+            <p>Build at least one personal coding project outside of class requirements.</p>
+          </div>
+        </li>
+        <li>
+          <span class="goal-num">03</span>
+          <div>
+            <h3>Get real-world experience</h3>
+            <p>Land an internship or on-the-job training related to software development.</p>
+          </div>
+        </li>
       </ol>
     </section>
 
   </main>
 
-  <footer>
-    <p>Group 1 &mdash; Section BSCS - 1G &mdash; CC 101 Final Project</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-name">My Computing Journey</span>
+        </a>
+        <p>A CC 101 final project by Group 1, Section BSCS - 1G. Built with HTML5 and CSS.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="topics.html">Computing Topics</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Group 1 &middot; BSCS - 1G</span>
+      <span>CC 101 Final Project</span>
+    </div>
   </footer>
 
 </body>

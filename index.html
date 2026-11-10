@@ -3,60 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Computing Journey - a CC 101 final project website by Group 1, Section BSCS - 1G.">
   <title>My Computing Journey - Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Header and navigation are the same on every page -->
-  <header>
-    <h1>My Computing Journey</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="topics.html">Computing Topics</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-name">My Computing Journey</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="topics.html">Topics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="nav-cta" href="contact.html">Get in touch</a>
+    </div>
   </header>
 
   <main>
 
-    <!-- Banner / hero section -->
-    <section>
-      <img src="images/banner.svg" alt="Illustration of a laptop displaying lines of code" class="banner">
-      <h2>Welcome!</h2>
-      <p>
-        Hi, I'm Group 1, a student currently exploring the world of computing.
-        This website documents my journey through CC 101: Introduction to Computing -
-        from the basics of the computing industry, to the history and parts of the
-        machines we use every day, all the way to building this very page with
-        HTML5 and CSS.
-      </p>
-      <p>
-        Feel free to look around! Use the navigation menu above to learn more about
-        me, review what I've learned so far, or get in touch.
-      </p>
+    <!-- Hero: short welcome message + banner picture -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="pill"><span class="dot"></span> CC 101 &middot; Final Project</span>
+          <h1>Building my way through <span class="grad">computing</span>.</h1>
+          <p class="lead">
+            Hi, I'm Group 1, a student exploring the world of computing. This site
+            documents my journey through CC 101 &mdash; from the industry and history
+            of computers to the parts inside them, and finally to building this page
+            with HTML5 and CSS.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="topics.html">Explore the topics <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-ghost" href="about.html">About me</a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>6</strong><span>Lessons reviewed</span></div>
+            <div><strong>4</strong><span>Pages built</span></div>
+            <div><strong>100%</strong><span>HTML &amp; CSS</span></div>
+          </div>
+        </div>
+
+        <!-- Bento grid visual -->
+        <div class="hero-bento">
+          <div class="bento-cell cell-image">
+            <img src="images/banner.svg" alt="Illustration of a laptop displaying lines of code" class="banner">
+            <span class="floating-badge">HTML5 &amp; CSS</span>
+          </div>
+
+          <div class="bento-cell cell-code">
+            <div class="code-head">
+              <span class="code-dots"><i></i><i></i><i></i></span>
+              <span>index.html</span>
+            </div>
+            <div class="code-lines">
+              <p><span class="c-muted">&lt;!-- My journey --&gt;</span></p>
+              <p><span class="c-tag">&lt;h1&gt;</span><span class="c-text">Hello, world</span><span class="c-tag">&lt;/h1&gt;</span></p>
+              <p><span class="c-tag">&lt;p&gt;</span><span class="c-text">Learning HTML &amp; CSS</span><span class="c-tag">&lt;/p&gt;</span></p>
+              <p><span class="c-muted">/* still building */</span></p>
+            </div>
+          </div>
+
+          <div class="bento-cell cell-stat">
+            <span class="cell-stat-num grad">06</span>
+            <span class="cell-stat-label">lessons<br>summarized</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h3>What you'll find here</h3>
-      <ul>
-        <li><strong>About Me</strong> - who I am and where I want to go in BSCS</li>
-        <li><strong>Computing Topics</strong> - a review of Lessons 1 to 4</li>
-        <li><strong>Contact</strong> - a way to reach me</li>
-      </ul>
+    <!-- Marquee strip -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>HTML5</span><span class="sep">&bull;</span>
+        <span>CSS3</span><span class="sep">&bull;</span>
+        <span>Responsive Design</span><span class="sep">&bull;</span>
+        <span>Lessons 1&ndash;6</span><span class="sep">&bull;</span>
+        <span>CC 101</span><span class="sep">&bull;</span>
+        <span>BSCS 1G</span><span class="sep">&bull;</span>
+        <span>HTML5</span><span class="sep">&bull;</span>
+        <span>CSS3</span><span class="sep">&bull;</span>
+        <span>Responsive Design</span><span class="sep">&bull;</span>
+        <span>Lessons 1&ndash;6</span><span class="sep">&bull;</span>
+        <span>CC 101</span><span class="sep">&bull;</span>
+        <span>BSCS 1G</span><span class="sep">&bull;</span>
+      </div>
+    </div>
+
+    <!-- What you'll find here, shown as a bento grid -->
+    <section class="section">
+      <div class="section-head">
+        <span class="kicker">Start here</span>
+        <h2>What you'll find here</h2>
+        <p>Feel free to look around. Use the navigation above or jump straight into a section below.</p>
+      </div>
+
+      <div class="bento-grid">
+        <article class="glass-card span-7">
+          <span class="card-index">01</span>
+          <h3>About Me</h3>
+          <p>Who I am, the IT career path I'm aiming for, the skills I want to learn, and my three goals for this course.</p>
+          <a class="card-link" href="about.html">Read more <span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="glass-card span-5">
+          <span class="card-index">02</span>
+          <h3>Computing Topics</h3>
+          <p>A review of Lessons 1 to 6, a timeline of computing, labeled computer parts, and security tips.</p>
+          <a class="card-link" href="topics.html">Read more <span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="glass-card span-5">
+          <span class="card-index">03</span>
+          <h3>Contact</h3>
+          <p>A simple form to reach me, plus two reliable websites I use when learning.</p>
+          <a class="card-link" href="contact.html">Read more <span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="glass-card span-7 accent-card">
+          <span class="kicker">The goal</span>
+          <h3>From the abacus to the browser.</h3>
+          <p>Every lesson connects: the industry, the machines, and the code that runs on them. This site is the proof.</p>
+        </article>
+      </div>
     </section>
 
   </main>
 
-  <!-- Footer with student info, required on every page -->
-  <footer>
-    <p>Group 1 &mdash; Section BSCS - 1G &mdash; CC 101 Final Project</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-name">My Computing Journey</span>
+        </a>
+        <p>A CC 101 final project by Group 1, Section BSCS - 1G. Built with HTML5 and CSS.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="topics.html">Computing Topics</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Group 1 &middot; BSCS - 1G</span>
+      <span>CC 101 Final Project</span>
+    </div>
   </footer>
 
 </body>
