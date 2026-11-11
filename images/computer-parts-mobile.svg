@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 800" role="img" aria-label="Mobile diagram of a desktop computer case with the case fan, CPU, RAM, graphics card, storage, power supply, and motherboard labeled">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081527"/>
+      <stop offset="1" stop-color="#0d2240"/>
+    </linearGradient>
+    <linearGradient id="mcase" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16294a"/>
+      <stop offset="1" stop-color="#0d1a30"/>
+    </linearGradient>
+    <linearGradient id="mpcb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123056"/>
+      <stop offset="1" stop-color="#0c2140"/>
+    </linearGradient>
+    <linearGradient id="mmfans" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4d6b"/>
+      <stop offset="1" stop-color="#1d2b42"/>
+    </linearGradient>
+    <linearGradient id="mram" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4da3ff"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="mgpu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b3a55"/>
+      <stop offset="1" stop-color="#16223a"/>
+    </linearGradient>
+    <linearGradient id="mpsu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7b23b"/>
+      <stop offset="1" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="800" fill="url(#mbg)"/>
+
+  <!-- tower case and motherboard -->
+  <rect x="20" y="20" width="260" height="760" rx="12" fill="url(#mcase)" stroke="#2563eb" stroke-width="3"/>
+  <rect x="28" y="28" width="244" height="744" rx="8" fill="#0a1830" opacity="0.6"/>
+  <rect x="34" y="34" width="232" height="732" rx="6" fill="url(#mpcb)" stroke="#1e3a63" stroke-width="2"/>
+
+  <!-- copper traces -->
+  <g stroke="#1c4a80" stroke-width="1.2" fill="none" opacity="0.8">
+    <path d="M46 50h50v40h30"/>
+    <path d="M46 60h40v120h30"/>
+    <path d="M250 60v120h-20"/>
+    <path d="M250 280v80h-30"/>
+    <path d="M46 330h20v90h20"/>
+    <path d="M46 450h20v80h20"/>
+  </g>
+
+  <!-- case fan -->
+  <rect x="44" y="44" width="48" height="48" rx="4" fill="#10233d" stroke="#3d5a80" stroke-width="2"/>
+  <circle cx="68" cy="68" r="18" fill="#0c1830" stroke="#4da3ff" stroke-width="1.5"/>
+  <g fill="#4f7fb5" opacity="0.85">
+    <ellipse cx="68" cy="56" rx="4" ry="10"/>
+    <ellipse cx="68" cy="80" rx="4" ry="10"/>
+    <ellipse cx="56" cy="68" rx="10" ry="4"/>
+    <ellipse cx="80" cy="68" rx="10" ry="4"/>
+  </g>
+  <circle cx="68" cy="68" r="4" fill="#9fd1ff"/>
+
+  <!-- CPU with cooler -->
+  <rect x="86" y="116" width="70" height="70" rx="4" fill="#0d1d33" stroke="#4da3ff" stroke-width="2"/>
+  <rect x="100" y="130" width="42" height="42" rx="3" fill="#1d4f8f"/>
+  <g stroke="#6fc3ff" stroke-width="1" opacity="0.9">
+    <path d="M104 134h34M104 140h34M104 146h34M104 152h34M104 158h34"/>
+    <path d="M106 130v42M112 130v42M118 130v42M124 130v42M130 130v42M136 130v42"/>
+  </g>
+  <circle cx="121" cy="151" r="54" fill="#132844" stroke="#4da3ff" stroke-width="2"/>
+  <g fill="#5b8ec4" opacity="0.85">
+    <ellipse cx="121" cy="121" rx="11" ry="27"/>
+    <ellipse cx="121" cy="181" rx="11" ry="27"/>
+    <ellipse cx="91" cy="151" rx="27" ry="11"/>
+    <ellipse cx="151" cy="151" rx="27" ry="11"/>
+    <ellipse cx="100" cy="130" rx="11" ry="27" transform="rotate(45 100 130)"/>
+    <ellipse cx="142" cy="130" rx="11" ry="27" transform="rotate(-45 142 130)"/>
+    <ellipse cx="100" cy="172" rx="11" ry="27" transform="rotate(-45 100 172)"/>
+    <ellipse cx="142" cy="172" rx="11" ry="27" transform="rotate(45 142 172)"/>
+  </g>
+  <circle cx="121" cy="151" r="12" fill="#4da3ff" stroke="#9fd1ff" stroke-width="2"/>
+
+  <!-- RAM slots and sticks -->
+  <g>
+    <rect x="194" y="104" width="14" height="110" rx="2" fill="#0b1a2e" stroke="#2c4d7d" stroke-width="1.5"/>
+    <rect x="212" y="104" width="14" height="110" rx="2" fill="#0b1a2e" stroke="#2c4d7d" stroke-width="1.5"/>
+    <rect x="230" y="104" width="14" height="110" rx="2" fill="#0b1a2e" stroke="#2c4d7d" stroke-width="1.5"/>
+    <rect x="248" y="104" width="14" height="110" rx="2" fill="#0b1a2e" stroke="#2c4d7d" stroke-width="1.5"/>
+
+    <rect x="212" y="100" width="14" height="114" rx="3" fill="url(#mram)" stroke="#8cc4ff" stroke-width="1.5"/>
+    <g fill="#0b2f5c">
+      <rect x="214" y="108" width="10" height="7"/>
+      <rect x="214" y="120" width="10" height="7"/>
+      <rect x="214" y="132" width="10" height="7"/>
+      <rect x="214" y="144" width="10" height="7"/>
+    </g>
+    <rect x="248" y="100" width="14" height="114" rx="3" fill="url(#mram)" stroke="#8cc4ff" stroke-width="1.5"/>
+    <g fill="#0b2f5c">
+      <rect x="250" y="108" width="10" height="7"/>
+      <rect x="250" y="120" width="10" height="7"/>
+      <rect x="250" y="132" width="10" height="7"/>
+      <rect x="250" y="144" width="10" height="7"/>
+    </g>
+  </g>
+
+  <!-- chipset heatsink -->
+  <rect x="48" y="240" width="72" height="60" rx="4" fill="url(#mmfans)" stroke="#476a99" stroke-width="1.5"/>
+  <g stroke="#5c80ad" stroke-width="1.5" opacity="0.9">
+    <path d="M54 250h60M54 260h60M54 270h60M54 280h60M54 290h60"/>
+  </g>
+  <text x="84" y="276" text-anchor="middle" font-family="Arial" font-size="8" fill="#a9c4e6">CHIPSET</text>
+
+  <!-- graphics card -->
+  <rect x="48" y="324" width="204" height="82" rx="6" fill="url(#mgpu)" stroke="#3d5a80" stroke-width="2"/>
+  <rect x="60" y="400" width="90" height="7" rx="1" fill="#d9b45a"/>
+  <g fill="#8a6d2c">
+    <rect x="66" y="400" width="4" height="7"/>
+    <rect x="76" y="400" width="4" height="7"/>
+    <rect x="86" y="400" width="4" height="7"/>
+    <rect x="96" y="400" width="4" height="7"/>
+    <rect x="106" y="400" width="4" height="7"/>
+    <rect x="116" y="400" width="4" height="7"/>
+    <rect x="126" y="400" width="4" height="7"/>
+  </g>
+  <g>
+    <circle cx="96" cy="364" r="27" fill="#0c1830" stroke="#4da3ff" stroke-width="1.5"/>
+    <g fill="#4f7fb5" opacity="0.85">
+      <ellipse cx="96" cy="348" rx="5" ry="13"/>
+      <ellipse cx="96" cy="380" rx="5" ry="13"/>
+      <ellipse cx="80" cy="364" rx="13" ry="5"/>
+      <ellipse cx="112" cy="364" rx="13" ry="5"/>
+    </g>
+    <circle cx="96" cy="364" r="5" fill="#9fd1ff"/>
+  </g>
+  <g>
+    <circle cx="176" cy="364" r="27" fill="#0c1830" stroke="#4da3ff" stroke-width="1.5"/>
+    <g fill="#4f7fb5" opacity="0.85">
+      <ellipse cx="176" cy="348" rx="5" ry="13"/>
+      <ellipse cx="176" cy="380" rx="5" ry="13"/>
+      <ellipse cx="160" cy="364" rx="13" ry="5"/>
+      <ellipse cx="192" cy="364" rx="13" ry="5"/>
+    </g>
+    <circle cx="176" cy="364" r="5" fill="#9fd1ff"/>
+  </g>
+
+  <!-- storage drives -->
+  <rect x="48" y="432" width="204" height="82" rx="5" fill="#0b1a2e" stroke="#2c4d7d" stroke-width="2"/>
+  <rect x="58" y="442" width="90" height="30" rx="3" fill="#2b3a55" stroke="#5c80ad" stroke-width="1.5"/>
+  <text x="103" y="461" text-anchor="middle" font-family="Arial" font-size="10" fill="#a9c4e6">SSD</text>
+  <rect x="156" y="442" width="86" height="30" rx="3" fill="#243149" stroke="#5c80ad" stroke-width="1.5"/>
+  <circle cx="199" cy="457" r="9" fill="#0e1a2c" stroke="#476a99" stroke-width="1.5"/>
+  <circle cx="199" cy="457" r="3" fill="#5c80ad"/>
+  <rect x="58" y="478" width="90" height="30" rx="3" fill="#243149" stroke="#5c80ad" stroke-width="1.5"/>
+  <text x="103" y="497" text-anchor="middle" font-family="Arial" font-size="10" fill="#8aa6c8">HDD</text>
+  <rect x="156" y="478" width="86" height="30" rx="3" fill="#2b3a55" stroke="#5c80ad" stroke-width="1.5"/>
+  <text x="199" y="497" text-anchor="middle" font-family="Arial" font-size="10" fill="#a9c4e6">SATA</text>
+
+  <!-- power supply -->
+  <rect x="48" y="540" width="204" height="58" rx="4" fill="url(#mpsu)" stroke="#fcd34d" stroke-width="2"/>
+  <circle cx="80" cy="569" r="15" fill="#3b2a0c" stroke="#fcd34d" stroke-width="1.5"/>
+  <g stroke="#fcd34d" stroke-width="1.2">
+    <path d="M80 555v28M66 569h28M70 558l20 22M90 558l-20 22"/>
+  </g>
+  <text x="168" y="574" text-anchor="middle" font-family="Arial" font-size="10" fill="#3b2a0c" font-weight="bold">POWER SUPPLY</text>
+
+  <!-- motherboard label inside board -->
+  <text x="150" y="742" text-anchor="middle" font-family="Arial" font-size="11" fill="#5c80ad" letter-spacing="2">MOTHERBOARD</text>
+
+  <!-- labels -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ffffff">
+    <line x1="92" y1="68" x2="300" y2="68" stroke="#4da3ff" stroke-width="1.5"/>
+    <circle cx="92" cy="68" r="3.5" fill="#4da3ff"/>
+    <text x="308" y="64">Case Fan</text>
+    <text x="308" y="82" font-size="11" fill="#9fb3d6">keeps airflow cool</text>
+
+    <line x1="175" y1="151" x2="300" y2="146" stroke="#4da3ff" stroke-width="1.5"/>
+    <circle cx="175" cy="151" r="3.5" fill="#4da3ff"/>
+    <text x="308" y="142">CPU (Processor)</text>
+    <text x="308" y="160" font-size="11" fill="#9fb3d6">with CPU cooler</text>
+
+    <line x1="262" y1="190" x2="300" y2="218" stroke="#4da3ff" stroke-width="1.5"/>
+    <circle cx="262" cy="190" r="3.5" fill="#4da3ff"/>
+    <text x="308" y="214">RAM (Memory)</text>
+    <text x="308" y="232" font-size="11" fill="#9fb3d6">working memory</text>
+
+    <line x1="252" y1="365" x2="300" y2="330" stroke="#4da3ff" stroke-width="1.5"/>
+    <circle cx="252" cy="365" r="3.5" fill="#4da3ff"/>
+    <text x="308" y="326">Graphics Card</text>
+    <text x="308" y="344" font-size="11" fill="#9fb3d6">renders images</text>
+
+    <line x1="252" y1="473" x2="300" y2="468" stroke="#4da3ff" stroke-width="1.5"/>
+    <circle cx="252" cy="473" r="3.5" fill="#4da3ff"/>
+    <text x="308" y="464">Storage</text>
+    <text x="308" y="482" font-size="11" fill="#9fb3d6">SSD and HDD</text>
+
+    <line x1="252" y1="569" x2="300" y2="584" stroke="#fcd34d" stroke-width="1.5"/>
+    <circle cx="252" cy="569" r="3.5" fill="#fcd34d"/>
+    <text x="308" y="580">Power Supply</text>
+    <text x="308" y="598" font-size="11" fill="#9fb3d6">AC to DC power</text>
+
+    <line x1="236" y1="720" x2="300" y2="700" stroke="#4da3ff" stroke-width="1.5"/>
+    <circle cx="236" cy="720" r="3.5" fill="#4da3ff"/>
+    <text x="308" y="696">Motherboard</text>
+    <text x="308" y="714" font-size="11" fill="#9fb3d6">main circuit board</text>
+  </g>
+</svg>
